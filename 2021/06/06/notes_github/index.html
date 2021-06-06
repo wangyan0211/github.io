@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>归档 | zero</title>
+  <title>zero</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="wangyan">
   <meta name="keywords" content="">
@@ -62,32 +62,99 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 5.1.1"></head>
 <body>
+<div class="single">
 
 <div id="page">
-
-<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg)">
+<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/post_cover.jpeg)" data-stellar-background-ratio="0.5">
   <div class="overlay">
-  <div class="featured">
+  <div class="page-title">
     <div class="avatar"><a href="/"><img src="/images/avatar.jpeg"></a></div>
-    <span>wangyan</span>
-    <h1>zero</h1>
+    <span>2021-06-06</span>
+    <h2></h2>
     
-    
-  </div>
-  </div>
+    </div>
+</div>
 </div>
 
 <div id="lx-main-content">
   <div class="lx-post">
-  <h2 class="pagehead">文章归档</h2>
-    <div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2021-06-06</span>
-    <h2 class="title"><a href="/2021/06/06/notes_git/"></a></h2>
-    <p></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2021-06-06</span>
-    <h2 class="title"><a href="/2021/06/06/notes_github/"></a></h2>
-    <p></p></div></div>
+    <div class="lx-entry padding">
+      <div>
+        <body marginheight="0">
 
+<h2>💚第二部分：github使用</h2>
+<h3>🖊开发流程：</h3>
+<pre><code>1.A在本地创建本地仓库
+2.A创建github远程仓库
+3.A将文件git push
+4.B clone到本地进开发，B将本地开发内容推送到远程仓库，A在pull到本地</code></pre>
+<p><img src="/images/01.png" alt="01" title="01">
+
+</p>
+<p><img src="/images/02.png" alt="02" title="02">
+
+</p>
+<h3>😶命令：</h3>
+<pre><code>推送：git push 远程仓库地址 分支名                 
+推送：git push -u 远程仓库别名 分支名称
+//-u记住推送地址的分支 下次推送只需输入git push
+起别名：git remote add 远程仓库别名 远程仓库地址</code></pre>
+<p>对文件修改后应先添加git add 在添加说明git commit -m 说明 然后 git push
+
+</p>
+<h3>🎀克隆：git clone 仓库地址</h3>
+<pre><code>注意：1.当B clone后 会将A的别名也clone啦
+2.B修改后若要上传A的远程仓库需在github设置中添加开发者</code></pre>
+<h3>✌拉取：</h3>
+<pre><code>git pull 远程仓库地址/别名 分支名
+注意：在已有本地仓库的基础上进行</code></pre>
+<h3>🔮冲突：</h3>
+<pre><code>A、B同时上传新版本时，先上传的有效，后上传会报错。</code></pre>
+<h3>🎉SSH:</h3>
+<pre><code>在push时不需要用户名和密码，即公钥与私钥的配对，公钥放在github账号中，私钥在我的电脑中。
+生成秘钥:在控制台输入ssh-keygen 在我的电脑C盘的用户中找到.ssh文件
+id_rsa 为私钥存在电脑
+Id_rsa.pub为公钥添加到github
+注意：若ssh存在错误可将我的电脑中.ssh删除后在重新生成</code></pre>
+<h3>🐱‍🐉Git忽略清单:</h3>
+<pre><code>不需要管理的文件，不需要管理文件的文件名写入.gitignore。</code></pre>
+<h3>✨详细说明:readme.md文件</h3>
+<pre><code>http://mahua.jser.me/</code></pre>
+</body></html>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover prev lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-l.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2021/06/06/notes_git/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3></h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover next lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-r.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="#">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>没有更早的文章</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
 
 <footer>
   <div>
@@ -95,8 +162,6 @@
   </div>
 </footer>
 
-  </div>
-</div>
 </div>
 
 <button class="hamburger hamburger--arrow-r" type="button">
